@@ -3,7 +3,11 @@
 // Global variables and constants
 const stage = document.getElementById('stage');
 const scriptEditor = document.getElementById('script-editor');
-// ... other element references
+const scriptChoosingMenu = document.getElementById('script-choosing-menu');
+const scriptEditorBlocks = document.getElementById('script-editor-blocks');
+const spriteLibrary = document.getElementById('sprite-library');
+const costumeStageList = document.getElementById('costume-stage-list');
+const costumeStageEditor = document.getElementById('costume-stage-editor');
 
 // State machines for different sections
 const stageStateMachine = {
@@ -12,7 +16,15 @@ const stageStateMachine = {
 const scriptEditorStateMachine = {
   // ... states and transitions for script editor
 };
-// ... state machines for other sections
+const spriteLibraryStateMachine = {
+  // ... states and transitions for sprite library
+};
+const costumeStageListStateMachine = {
+  // ... states and transitions for costume stage list
+};
+const costumeStageEditorStateMachine = {
+  // ... states and transitions for costume stage editor
+};
 
 // Function to handle tab switching and visibility toggling
 function showSection(sectionId) {
