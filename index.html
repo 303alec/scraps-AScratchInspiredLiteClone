@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Scratch-Like Program</title>
+<style>
+  body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f4f4f4; /* Light gray background */
+  }
+
+  #app {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+  }
+
+  #stage {
+    flex: 1;
+    background-color: #fff;
+    border: 1px solid #ccc;
+  }
+
+  #script-editor {
+    width: 250px;
+    height: 100%;
+    background-color: #f1f1f1;
+    border-right: 1px solid #ccc;
+    overflow-y: auto;
+  }
+
+  #costume-stage-list,
+  #costume-stage-editor {
+    display: none; /* Initially hidden */
+  }
+
+  /* Color scheme inspired by Scratch */
+  .block {
+    background-color: #f9f5d7; /* Light yellow */
+    border: 1px solid #e5e7eb;
+    color: #333;
+  }
+
+  .block-title {
+    color: #25aaff; /* Blue */
+  }
+
+  .socket {
+    background-color: #e5e7eb;
+  }
+  #sprite-library {
+      display: flex;
+      flex-wrap: wrap; /* Allow wrapping for many sprites */
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 150px;
+      background-color: #f1f1f1;
+      border: 1px solid #ccc;
+  }
+  
+  .sprite-thumbnail {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    cursor: move;
+  }
+</style>
+</head>
+<body>
+  <div id="app">
+    <div id="stage"></div>
+    <div id="script-editor">
+      <div id="script-choosing-menu"></div>
+      <div id="script-editor-blocks"></div>
+    </div>
+    <div id="sprite-library"></div>
+    <div id="costume-stage-list"></div>
+    <div id="costume-stage-editor"></div>
+  </div>
+  <script src="your-script.js"></script>
+</body>
+</html>
